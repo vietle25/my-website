@@ -3,6 +3,7 @@
   <head>
     <title>reCAPTCHA</title>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="captcha.css" />
   </head>
   <body
     style="
@@ -32,9 +33,10 @@
     </form>
     <script>
       function captchaCallback(response) {
-        if (typeof CaptCha !== "undefined") {
-          CaptCha.postMessage(response);
-        }
+        console.log("reposonse ", response);
+        // if (typeof CaptCha !== "undefined") {
+        CaptCha.postMessage(response);
+        // }
       }
     </script>
   </body>
