@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Button Redirect Example</title>
+    <title>Button  Example</title>
     <style>
-        .custom-button {
-            padding: 16px;
-            font-size: 20px;
-            background-color: #4CAF50; /* Green background */
-            color: white; /* White text */
-            border: none; /* Remove border */
-            border-radius: 4px; /* Rounded corners */
-            cursor: pointer; /* Pointer/hand icon on hover */
-            margin: 10px; /* Add some space between buttons */
+          .custom-button {
+            display: block; /* Display buttons as block elements to stack them vertically */
+            width: 100%; /* Set the width to 100% of the parent container */
+            max-width: 200px; /* Set a maximum width for the buttons */
+            margin: 10px 0; /* Add some margin for spacing between buttons */
+            padding: 10px; /* Add padding for better appearance */
+            font-size: 16px; /* Set font size */
+            cursor: pointer; /* Change the cursor to pointer on hover */
+            background-color: #6ec6ca; /* Set the background color */
+            border: none; /* Remove default border */
+            color: white; /* Set text color */
+            border-radius: 20px; /* Add rounded corners */
         }
 
         .custom-button:hover {
@@ -28,12 +31,19 @@
         function redirectToUrl2() {
             window.location.href = 'https://evoappvn.onelink.me/QA15?af_xp=custom&pid=evo_hoanghamobile&deep_link_value=evoappvn%3A%2F%2Fmobile%2Fdeeplinking%3Fscreen_name%3Ddop_native_introduction_screen%26utm_source%3Devo_hoanghamobile%26utm_campaign%3Doffline_hhm_240601&af_dp=evoappvn%3A%2F%2Fmobile%2Fdeeplinking&af_force_deeplink=true&is_deferred=true'; // Replace with another URL
         }
+
+        function redirectToUrl3() {
+            window.location.href = 'https://evoappvn-stag.onelink.me/Blki?af_xp=custom&pid=evo_hoanghamobile&deep_link_value=evoappvn%3A%2F%2Fmobile%2Fdeeplinking%3Fscreen_name%3Ddop_native_introduction_screen%26utm_source%3Devo_hoanghamobile%26utm_campaign%3Doffline_hhm_240601&af_dp=evoappvn%3A%2F%2Fmobile%2Fdeeplinking&af_force_deeplink=true'; // Replace with another URL
+        }
+
+        function redirectToUrl4() {
+            window.location.href = 'https://evoappvn-uat.onelink.me/0Fmo?af_xp=custom&pid=evo_hoanghamobile&deep_link_value=evoappvn%3A%2F%2Fmobile%2Fdeeplinking%3Fscreen_name%3Ddop_native_introduction_screen%26utm_source%3Devo_hoanghamobile%26utm_campaign%3Doffline_hhm_240601&af_dp=evoappvn%3A%2F%2Fmobile%2Fdeeplinking&af_force_deeplink=true'; // Replace with another URL
+        }
     </script>
 </head>
 <body>
-
-    <button class="custom-button" onclick="redirectToUrl1()">Prod</button>
-    <button class="custom-button" onclick="redirectToUrl2()">Pro defferer</button>
-
+    <button class="custom-button" onclick="redirectToUrl1()">Prod onelink</button>
+    <button class="custom-button" onclick="redirectToUrl4()">UAT onelink</button>
+    <button class="custom-button" onclick="redirectToUrl3()">Stag onelink</button>
 </body>
 </html>
