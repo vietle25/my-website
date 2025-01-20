@@ -50,29 +50,34 @@
     </style>
     <script>
         function redirectToUrl1() {
-            window.location.href = 'https://evoappvn.onelink.me/QA15?af_xp=custom&pid=evo_hoanghamobile&deep_link_value=evoappvn%3A%2F%2Fmobile%2Fdeeplinking%3Fscreen_name%3Ddop_native_introduction_screen%26utm_source%3Devo_hoanghamobile%26utm_campaign%3Doffline_hhm_240601&af_dp=evoappvn%3A%2F%2Fmobile%2Fdeeplinking&af_force_deeplink=true'; // Replace with your desired URL
+            window.location.href = 'https://evoappvn.onelink.me/QA15?af_xp=custom&pid=evo_hoanghamobile&deep_link_value=evoappvn%3A%2F%2Fmobile%2Fdeeplinking%3Fscreen_name%3Ddop_native_introduction_screen%26utm_source%3Devo_hoanghamobile%26utm_campaign%3Doffline_hhm_240601&af_dp=evoappvn%3A%2F%2Fmobile%2Fdeeplinking&af_force_deeplink=true'; 
         }
 
         function redirectToUrl2() {
-            window.location.href = 'https://evoappvn.onelink.me/QA15?af_xp=custom&pid=evo_hoanghamobile&deep_link_value=evoappvn%3A%2F%2Fmobile%2Fdeeplinking%3Fscreen_name%3Ddop_native_introduction_screen%26utm_source%3Devo_hoanghamobile%26utm_campaign%3Doffline_hhm_240601&af_dp=evoappvn%3A%2F%2Fmobile%2Fdeeplinking&af_force_deeplink=true&is_deferred=true'; // Replace with another URL
+            window.location.href = 'https://evoappvn.onelink.me/QA15?af_xp=custom&pid=evo_hoanghamobile&deep_link_value=evoappvn%3A%2F%2Fmobile%2Fdeeplinking%3Fscreen_name%3Ddop_native_introduction_screen%26utm_source%3Devo_hoanghamobile%26utm_campaign%3Doffline_hhm_240601&af_dp=evoappvn%3A%2F%2Fmobile%2Fdeeplinking&af_force_deeplink=true&is_deferred=true';
         }
 
         function redirectToUrl3() {
-            window.location.href = 'https://evoappvn-stag.onelink.me/Blki?af_xp=custom&pid=evo_hoanghamobile&deep_link_value=evoappvn%3A%2F%2Fmobile%2Fdeeplinking%3Fscreen_name%3Ddop_native_introduction_screen%26utm_source%3Devo_hoanghamobile%26utm_campaign%3Doffline_hhm_240601&af_dp=evoappvn%3A%2F%2Fmobile%2Fdeeplinking&af_force_deeplink=true'; // Replace with another URL
+            window.location.href = 'https://evoappvn-stag.onelink.me/Blki?af_xp=custom&pid=evo_hoanghamobile&deep_link_value=evoappvn%3A%2F%2Fmobile%2Fdeeplinking%3Fscreen_name%3Ddop_native_introduction_screen%26utm_source%3Devo_hoanghamobile%26utm_campaign%3Doffline_hhm_240601&af_dp=evoappvn%3A%2F%2Fmobile%2Fdeeplinking&af_force_deeplink=true'
         }
 
         function redirectToUrl4() {
-            window.location.href = 'https://evoappvn-uat.onelink.me/0Fmo?af_xp=custom&pid=evo_hoanghamobile&deep_link_value=evoappvn%3A%2F%2Fmobile%2Fdeeplinking%3Fscreen_name%3Ddop_native_introduction_screen%26utm_source%3Devo_hoanghamobile%26utm_campaign%3Doffline_hhm_240601&af_dp=evoappvn%3A%2F%2Fmobile%2Fdeeplinking&af_force_deeplink=true'; // Replace with another URL
+            window.location.href = 'https://evoappvn-uat.onelink.me/0Fmo?af_xp=custom&pid=evo_hoanghamobile&deep_link_value=evoappvn%3A%2F%2Fmobile%2Fdeeplinking%3Fscreen_name%3Ddop_native_introduction_screen%26utm_source%3Devo_hoanghamobile%26utm_campaign%3Doffline_hhm_240601&af_dp=evoappvn%3A%2F%2Fmobile%2Fdeeplinking&af_force_deeplink=true';
+        }
+
+        function redirectToUrl5() {
+            window.location.href = 'https://evoappvn.onelink.me/QA15?af_xp=custom&pid=evo_hoanghamobile&deep_link_value=evoappvn%3A%2F%2Fmobile%2Fdeeplinking%3Fscreen_name%3Ddop_native_introduction_screen%26utm_source%3Devo_hoanghamobile%26utm_campaign%3Doffline_hhm_240601&af_dp=evoappvn%3A%2F%2Fmobile%2Fdeeplinking&af_force_deeplink=true&is_retargeting=true';
         }
     </script>
 </head>
 <body>
     <div class="button-container">
-        <button class="custom-button" onclick="redirectToUrl1()">Prod onelink</button>
-        <button class="custom-button" onclick="redirectToUrl4()">UAT onelink</button>
-        <button class="custom-button" onclick="redirectToUrl3()">Stag onelink</button>
+        <button class="custom-button" onclick="redirectToUrl1()">Prod Onelink</button>
+        <button class="custom-button" onclick="redirectToUrl4()">UAT Onelink</button>
+        <button class="custom-button" onclick="redirectToUrl3()">Stag Onelink</button>
             <br />
     <button class="custom-button" onclick="redirectToUrl2()">Prod onelink defferer</button>
+        <button class="custom-button" onclick="redirectToUrl5()">Prod Onelink Retargeting</button>
     </div>
 </body>
 </html>
