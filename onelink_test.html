@@ -5,22 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Button  Example</title>
     <style>
-          .custom-button {
-            display: block; /* Display buttons as block elements to stack them vertically */
-            width: 100%; /* Set the width to 100% of the parent container */
-            max-width: 200px; /* Set a maximum width for the buttons */
-            margin: 10px 0; /* Add some margin for spacing between buttons */
-            padding: 10px; /* Add padding for better appearance */
-            font-size: 16px; /* Set font size */
-            cursor: pointer; /* Change the cursor to pointer on hover */
-            background-color: #6ec6ca; /* Set the background color */
-            border: none; /* Remove default border */
-            color: white; /* Set text color */
-            border-radius: 20px; /* Add rounded corners */
+        body {
+            font-family: Arial, sans-serif; /* Use a clean, modern font */
+            background-color: #f4f4f9; /* Light background color for a professional look */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .button-container {
+            width: 100%;
+            max-width: 300px; /* Limit the container width for better mobile display */
+            text-align: center;
+        }
+
+        .custom-button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 15px;
+            font-size: 18px;
+            cursor: pointer;
+            background-color: #6ec6ca;
+            border: none;
+            color: white;
+            border-radius: 20px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
         }
 
         .custom-button:hover {
-            background-color: #45a049; /* Darker green on hover */
+            background-color: #5bb0b3;
+            transform: translateY(-2px); /* Slight lift effect on hover */
+        }
+
+        .custom-button:active {
+            transform: translateY(0); /* Reset the lift effect when button is pressed */
+            background-color: #4aa7a9; /* Darker shade when active */
         }
     </style>
     <script>
@@ -42,8 +67,10 @@
     </script>
 </head>
 <body>
-    <button class="custom-button" onclick="redirectToUrl1()">Prod onelink</button>
-    <button class="custom-button" onclick="redirectToUrl4()">UAT onelink</button>
-    <button class="custom-button" onclick="redirectToUrl3()">Stag onelink</button>
+    <div class="button-container">
+        <button class="custom-button" onclick="redirectToUrl1()">Prod onelink</button>
+        <button class="custom-button" onclick="redirectToUrl4()">UAT onelink</button>
+        <button class="custom-button" onclick="redirectToUrl3()">Stag onelink</button>
+    </div>
 </body>
 </html>
