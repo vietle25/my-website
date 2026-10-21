@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chính sách bảo mật - Chii</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: #FAFAF8;
+      color: #1A1A18;
+      font-size: 15px;
+      line-height: 1.7;
+      padding: 28px 20px 60px;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      margin-bottom: 4px;
+      color: #1A1A18;
+    }
+
+    .updated {
+      font-size: 12px;
+      color: #888;
+      font-family: 'Courier New', monospace;
+      letter-spacing: 0.05em;
+      margin-bottom: 28px;
+    }
+
+    h2 {
+      font-size: 15px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #4A4A42;
+      margin-top: 32px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 12px;
+      color: #3A3A32;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+
+    li {
+      margin-bottom: 6px;
+      color: #3A3A32;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 16px;
+      font-size: 13.5px;
+    }
+
+    th {
+      background: #EEEEE8;
+      text-align: left;
+      padding: 8px 10px;
+      font-weight: 600;
+      color: #4A4A42;
+    }
+
+    td {
+      padding: 8px 10px;
+      border-bottom: 1px solid #E8E8E0;
+      vertical-align: top;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #E8E8E0;
+      margin: 28px 0;
+    }
+
+    a {
+      color: #2D4A3E;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Chính sách bảo mật</h1>
+  <p class="updated">Cập nhật lần cuối: 21/10/2026</p>
+
+  <p><strong>Chii</strong> ("chúng tôi", "ứng dụng", thuộc Colossus) coi trọng quyền riêng tư của bạn. Chính sách bảo mật này mô tả cách chúng tôi thu thập, sử dụng và bảo vệ thông tin khi bạn sử dụng Chii, ứng dụng ghi chi tiêu bằng giọng nói.</p>
+
+  <hr />
+
+  <h2>1. Thông tin chúng tôi xử lý</h2>
+
+  <table>
+    <tr>
+      <th>Loại dữ liệu</th>
+      <th>Mô tả</th>
+    </tr>
+    <tr>
+      <td>Giao dịch chi tiêu</td>
+      <td>Nội dung, số tiền, danh mục, ngày và loại (chi hoặc thu) của từng giao dịch bạn ghi. Dữ liệu được lưu trong bộ nhớ ứng dụng trên thiết bị của bạn.</td>
+    </tr>
+    <tr>
+      <td>Thiết lập ngân sách</td>
+      <td>Thu nhập hàng tháng, chi phí cố định, mục tiêu tiết kiệm và ngày bắt đầu kỳ do bạn nhập khi thiết lập. Dữ liệu được lưu trên thiết bị của bạn.</td>
+    </tr>
+    <tr>
+      <td>Giọng nói</td>
+      <td>Khi bạn nhấn nút micro, ứng dụng dùng dịch vụ nhận dạng giọng nói của hệ điều hành (trên Android thường do Google cung cấp, trên iOS do Apple cung cấp). Âm thanh được xử lý bởi dịch vụ này theo chính sách của nhà cung cấp. Chii chỉ nhận lại phần văn bản đã nhận dạng, không ghi âm và không lưu âm thanh của bạn.</td>
+    </tr>
+    <tr>
+      <td>Dữ liệu trí tuệ nhân tạo (AI)</td>
+      <td>Văn bản câu nói của bạn được gửi tới Google Gemini API để tách số tiền, danh mục, ngày và loại giao dịch. Để viết lời khuyên ngắn, ứng dụng gửi một bản tóm tắt số liệu (ví dụ tổng chi hôm nay, tổng chi theo danh mục, phần trăm ngân sách đã dùng), không gửi danh sách giao dịch chi tiết kèm ngày giờ cụ thể. Không có tên, email hay mã định danh quảng cáo nào được gửi kèm.</td>
+    </tr>
+    <tr>
+      <td>Thời gian dùng thử</td>
+      <td>Ngày cài đặt được lưu trong kho khóa bảo mật của hệ điều hành (Android Keystore / iOS Keychain) để tính 3 ngày dùng thử. Trên iOS, giá trị này có thể còn lại sau khi gỡ và cài lại ứng dụng.</td>
+    </tr>
+    <tr>
+      <td>Dữ liệu gói Pro & Mua hàng</td>
+      <td>Trạng thái gói Chii Pro và thời hạn đăng ký, quản lý qua RevenueCat và Google Play / Apple App Store. RevenueCat nhận một mã định danh ẩn danh do ứng dụng tạo. Chúng tôi không thu thập hoặc lưu trữ thông tin thẻ ngân hàng của bạn.</td>
+    </tr>
+  </table>
+
+  <p>Chúng tôi <strong>không</strong> thu thập: dữ liệu vị trí, danh bạ, ảnh, tin nhắn, lịch sử duyệt web hoặc mã định danh quảng cáo. Chii không yêu cầu tạo tài khoản.</p>
+
+  <h2>2. Cách chúng tôi sử dụng thông tin</h2>
+  <ul>
+    <li>Nhận dạng và ghi lại giao dịch bạn nói, kể cả ngày ("hôm qua", "thứ hai tuần trước") và khoản thu như nhặt được, được cho, thưởng.</li>
+    <li>Tính hạn mức chi tiêu trong ngày, ngân sách cả kỳ, mục tiêu tiết kiệm và phân tích theo tuần, tháng ngay trên thiết bị.</li>
+    <li>Tạo lời khuyên ngắn dựa trên số liệu chi tiêu của bạn.</li>
+    <li>Kích hoạt, xác minh và duy trì quyền lợi gói Chii Pro.</li>
+  </ul>
+  <p>Chúng tôi <strong>tuyệt đối không bán</strong>, chia sẻ hoặc cho thuê dữ liệu cá nhân của bạn cho bất kỳ bên thứ ba nào vì mục đích quảng cáo hoặc tiếp thị.</p>
+
+  <h2>3. Chia sẻ dữ liệu & Dịch vụ đối tác</h2>
+  <p>Chúng tôi chỉ chia sẻ dữ liệu tối thiểu cần thiết với các đối tác sau:</p>
+  <ul>
+    <li><strong>Google Gemini API (Google LLC)</strong> — Phân tích câu nói và tạo lời khuyên chi tiêu. Dữ liệu được xử lý theo điều khoản của Gemini API và Chính sách quyền riêng tư của Google.</li>
+    <li><strong>Dịch vụ nhận dạng giọng nói của hệ điều hành (Google / Apple)</strong> — Chuyển giọng nói thành văn bản.</li>
+    <li><strong>RevenueCat, Inc.</strong> — Quản lý trạng thái gói đăng ký Pro và biên lai giao dịch.</li>
+    <li><strong>Google Play & Apple App Store</strong> — Xử lý toàn bộ giao dịch thanh toán.</li>
+  </ul>
+
+  <h2>4. Lưu trữ và bảo mật dữ liệu</h2>
+  <p>Dữ liệu chi tiêu và thiết lập của bạn được lưu ngay trên thiết bị. Chii không có máy chủ riêng lưu dữ liệu này và chúng tôi không nhận được bản sao. Dữ liệu gửi tới dịch vụ AI và dịch vụ thanh toán được truyền qua kết nối mã hóa (HTTPS).</p>
+
+  <h2>5. Quyền riêng tư của trẻ em</h2>
+  <p>Chii là ứng dụng quản lý chi tiêu cá nhân, không hướng tới trẻ em dưới 13 tuổi. Chúng tôi không cố ý thu thập thông tin cá nhân của trẻ em. Nếu phát hiện trường hợp trẻ em cung cấp thông tin, vui lòng liên hệ để chúng tôi hỗ trợ xử lý.</p>
+
+  <h2>6. Quyền của bạn & Yêu cầu xóa dữ liệu</h2>
+  <ul>
+    <li><strong>Xem và chỉnh sửa:</strong> Xem lại, thêm hoặc xóa từng giao dịch của bất kỳ ngày nào, và đổi thiết lập ngân sách bất cứ lúc nào trong ứng dụng.</li>
+    <li><strong>Xóa toàn bộ dữ liệu:</strong> Vì dữ liệu nằm trên thiết bị, bạn có thể xóa tất cả bằng cách xóa dữ liệu ứng dụng trong cài đặt hệ điều hành hoặc gỡ cài đặt ứng dụng.</li>
+    <li><strong>Thu hồi quyền micro:</strong> Quyền micro chỉ được dùng khi bạn chủ động nhấn nói và có thể tắt trong cài đặt thiết bị.</li>
+    <li><strong>Dữ liệu do bên thứ ba xử lý:</strong> Với Google và RevenueCat, vui lòng xem chính sách của họ hoặc liên hệ chúng tôi để được hỗ trợ.</li>
+  </ul>
+
+  <h2>7. Cookie và công nghệ theo dõi</h2>
+  <p>Chii là ứng dụng di động nguyên bản, không sử dụng cookie trình duyệt và không tích hợp bất kỳ mạng lưới quảng cáo hay công cụ theo dõi hành vi người dùng nào.</p>
+
+  <h2>8. Thay đổi chính sách</h2>
+  <p>Chúng tôi có thể cập nhật Chính sách bảo mật này khi có tính năng mới hoặc thay đổi quy định. Mọi thay đổi sẽ được cập nhật công khai tại trang này kèm ngày sửa đổi gần nhất.</p>
+
+  <h2>9. Thông tin liên hệ</h2>
+  <p>Nếu bạn có câu hỏi, góp ý hoặc yêu cầu liên quan đến quyền riêng tư và dữ liệu cá nhân, vui lòng liên hệ:</p>
+  <ul>
+    <li>Email: <a href="mailto:contact.vietle@gmail.com">contact.vietle@gmail.com</a></li>
+  </ul>
+
+  <hr />
+
+  <h1>Privacy Policy (English summary)</h1>
+  <p class="updated">Last updated: 21/10/2026</p>
+
+  <p><strong>Chii</strong> (part of Colossus) is a voice expense tracker.</p>
+  <ul>
+    <li><strong>Stored on your device:</strong> your transactions and budget settings stay on your phone. Chii has no servers of its own for this data and requires no account.</li>
+    <li><strong>Voice:</strong> speech recognition is performed by your operating system's service (Google on most Android devices, Apple on iOS). Chii only receives the recognized text and does not record or store audio.</li>
+    <li><strong>AI:</strong> the text of what you say, and a summary of spending figures used to write tips, are sent to the Google Gemini API. No name, email or advertising ID is sent.</li>
+    <li><strong>Subscriptions:</strong> payments are handled by Google Play / Apple. RevenueCat receives an anonymous app-generated ID and your subscription status. Chii never sees your card details.</li>
+    <li><strong>We do not:</strong> show ads, use advertising trackers, sell your data, or collect location, contacts or photos.</li>
+    <li><strong>Deletion:</strong> delete individual transactions in the app, or clear the app's data / uninstall to remove everything.</li>
+    <li><strong>Children:</strong> Chii is not directed to children under 13.</li>
+    <li><strong>Contact:</strong> <a href="mailto:contact.vietle@gmail.com">contact.vietle@gmail.com</a></li>
+  </ul>
+
+</body>
+</html>
